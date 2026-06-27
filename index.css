@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+/* Header */
+
+.header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    color: #103d63;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.header p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.verified {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Banner */
+
+.banner {
+    background: #103d63;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Details */
+
+.details {
+    margin-bottom: 25px;
+}
+
+.details div {
+    margin-bottom: 8px;
+}
+
+.details strong {
+    width: 70px;
+    display: inline-block;
+}
+
+/* Intro */
+
+.intro {
+    margin-bottom: 25px;
+}
+
+.intro p {
+    margin-bottom: 15px;
+}
+
+/* Benefits */
+
+.benefits {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #fafafa;
+    margin-bottom: 25px;
+}
+
+.benefits ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.benefits li {
+    margin-bottom: 12px;
+}
+
+/* CTA */
+
+.cta {
+    border: 2px dashed #8aa3b8;
+    padding: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cta p {
+    margin-bottom: 18px;
+}
+
+.cta button {
+    background: #103d63;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.cta button:hover {
+    opacity: 0.9;
+}
+
+.cta small {
+    display: block;
+    color: #666;
+    word-break: break-word;
+}
+
+/* Footer */
+
+.footer {
+    font-size: 0.75rem;
+    color: #888;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 1.6rem;
+    }
+
+    .verified {
+        position: static;
+        display: inline-block;
+        margin-top: 12px;
+    }
+
+    .banner {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.3rem;
+    }
+
+    .details strong {
+        display: block;
+        width: auto;
+        margin-bottom: 2px;
+    }
+
+    .cta button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .benefits,
+    .cta {
+        padding: 15px;
+    }
+}
